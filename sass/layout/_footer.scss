@@ -1,0 +1,32 @@
+footer {
+  color: $color-grey-light;
+  background-color: $color-blue-dark;
+  padding: 9rem 7rem 3rem 7rem;
+
+  @include clearfix();
+  #logo-text-footer {
+    width: 25%;
+    font-size: 4rem;
+    text-transform: uppercase;
+    float: left;
+    
+  }
+  #copyright {
+    width: 75%;
+    font-size: 1.2rem;
+    float: left;
+    p:nth-child(1) {
+      margin-bottom: 2rem;
+      // 단어가 길더라도 짤려서 넘겨진다.
+      word-break: break-all;
+      // 양끝 길이가 일치하게
+      text-align: justify;
+      column-count: 3;
+      column-gap: 3rem;
+      column-rule-style: dashed;
+      column-rule-width: 1px;
+      column-rule-color: #888;
+      column-width: 1rem;
+    }
+  }
+}
